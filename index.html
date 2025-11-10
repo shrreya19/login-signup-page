@@ -3,47 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colorful Pastel Login & Signup Page</title>
+  <title>Pastel Login Page with Theme Toggle</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <button id="theme-toggle">🌞 Toggle Theme</button>
+
   <div class="container">
-    <h2>Welcome!</h2>
+    <h2>Welcome Back!</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter username">
 
-    <!-- LOGIN FORM -->
-    <form id="login-form">
-      <label for="login-username">Username:</label>
-      <input type="text" id="login-username" placeholder="Enter username">
-
-      <label for="login-password">Password:</label>
-      <input type="password" id="login-password" placeholder="Enter password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
 
       <button type="submit" class="btn-login">Login</button>
     </form>
-
-    <!-- SIGNUP FORM -->
-    <form id="signup-form">
-      <label for="signup-username">Username:</label>
-      <input type="text" id="signup-username" placeholder="Create username">
-
-      <label for="signup-email">Email:</label>
-      <input type="email" id="signup-email" placeholder="Enter email">
-
-      <label for="signup-password">Password:</label>
-      <input type="password" id="signup-password" placeholder="Create password">
-
-      <button type="submit" class="btn-signup">Sign Up</button>
-    </form>
-
-    <!-- ISSUE 2: Both forms visible; no toggle button between Login and Signup -->
-    <!-- Suggestion: Add JS buttons to switch between forms -->
-    <!-- Example: <p>Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a></p> -->
-
-    <!-- ISSUE 1: No dark/light mode toggle -->
-    <!-- Suggestion: Add a button here to switch themes -->
-    <!-- Example: <button id="theme-toggle">Switch Theme</button> -->
   </div>
+
+  <!-- Link external JS at the end of body -->
+  <script src="script.js"></script>
 </body>
 </html>
+
 
 

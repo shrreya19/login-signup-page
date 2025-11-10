@@ -1,0 +1,104 @@
+/* ===== Colorful Pastel-Themed Login & Signup Page ===== */
+
+/* Background gradient */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc, #ffd6a5, #caffbf);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container box */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #444;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+  display: block; /* ISSUE 2: Both forms are visible at the same time */
+  text-align: left;
+}
+
+label {
+  color: #555;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #a0c4ff;
+  outline: none;
+  background-color: #f0f9ff;
+}
+
+/* Buttons with colorful pastel shades */
+.btn-login {
+  background-color: #a0c4ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #89b4f8;
+}
+
+.btn-signup {
+  background-color: #ffc6ff;
+  color: #444;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background-color: #fdb8fd;
+}
+
+/* ISSUE 1: Missing dark/light mode support */
+/* Suggestion: Add CSS variables for colors and toggle using JS later */
